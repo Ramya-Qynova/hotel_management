@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Grand Vista Palace – Centralized Reusable UI Colour Theme
+   Single Source of Truth for Application Styling
+   Visual Atmosphere: Soft lavender, pale purple, pastel pink, and white
+   ========================================================================== */
+
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* ========================================================================
+     1. Core Palette Tokens (Reference Values)
+     Pastel backgrounds and light lavender sidebar kept unchanged
+     ======================================================================== */
+  /* Main primary purple */
+  --color-primary: #A18FD5;
+
+  /* Sidebar lavender */
+  --color-sidebar: #AA9AE0;
+
+  /* Secondary lavender & pastel accents */
+  --color-secondary: #C8BCE9;
+  --color-soft-pink: #F8EAF0;
+  --color-light-lavender: #F0EAFB;
+
+  /* Workspace & Card backgrounds (Light pastel backgrounds unchanged) */
+  --color-background: #FFF4F6;
+  --color-background-secondary: #FFF8FA;
+  --color-card: #FFFBFC;
+
+  /* ========================================================================
+     Centralized Text Colours (Requirement 1)
+     ======================================================================== */
+  --color-heading: #38264F;
+  --color-text: #51465F;
+  --color-text-secondary: #70647E;
+  --color-muted: #82758F;
+
+  --color-sidebar-text: #FFFFFF;
+  --color-sidebar-active-text: #7257A8;
+
+  --color-button-text: #FFFFFF;
+  --color-input-text: #51465F;
+  --color-placeholder: #887C96;
+
+  --color-card-heading: #453257;
+  --color-table-text: #51465F;
+
+  /* Structural borders */
+  --color-border: #F0E5F0;
+  --color-border-subtle: #F6EFF6;
+
+  /* Semantic status tokens (Light pastel tones) */
+  --color-success: #B8DFC9;
+  --color-warning: #F7E2B8;
+  --color-danger: #EDBBC5;
+  --color-info: #C8D8F0;
+
+  /* Semantic status high-contrast text */
+  --color-success-text: #26593a;
+  --color-warning-text: #7a5310;
+  --color-danger-text: #8e2b3e;
+  --color-info-text: #2a4c80;
+
+  /* ========================================================================
+     2. Derived Primary & Functional Tokens
+     ======================================================================== */
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 85%, black);
+  --color-primary-active: color-mix(in srgb, var(--color-primary) 75%, black);
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 12%, white);
+  --color-primary-border: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-primary-subtle: color-mix(in srgb, var(--color-primary) 8%, white);
+  --color-primary-contrast: #ffffff;
+
+  /* Focus ring derived from primary */
+  --color-focus-ring: color-mix(in srgb, var(--color-primary) 25%, transparent);
+
+  /* Sidebar derived tokens */
+  --color-sidebar-hover: rgba(255, 255, 255, 0.18);
+  --color-sidebar-active-bg: #ffffff;
+  --color-sidebar-text-muted: rgba(255, 255, 255, 0.88);
+
+  /* Shadows tuned for soft pastel aesthetics */
+  --card-shadow: 0 2px 6px rgba(56, 38, 79, 0.04), 0 1px 3px rgba(56, 38, 79, 0.02);
+  --card-shadow-hover: 0 6px 16px rgba(56, 38, 79, 0.08), 0 2px 4px rgba(56, 38, 79, 0.03);
+  --modal-shadow: 0 20px 25px -5px rgba(56, 38, 79, 0.12), 0 8px 10px -6px rgba(56, 38, 79, 0.06);
+
+  /* ========================================================================
+     3. Backward-Compatible Semantic Aliases
+     Directly bound to the centralized design tokens
+     ======================================================================== */
+  --sidebar-bg: var(--color-sidebar);
+  --sidebar-border: var(--color-sidebar);
+  --sidebar-text: var(--color-sidebar-text);
+  --sidebar-active-bg: var(--color-sidebar-active-bg);
+  --sidebar-active-text: var(--color-sidebar-active-text);
+
+  --workspace-bg: var(--color-background);
+  --card-bg: var(--color-card);
+  --card-border: var(--color-border);
+
+  --forest-green: var(--color-sidebar-active-text);
+  --forest-green-hover: var(--color-primary-hover);
+  --forest-green-active: var(--color-primary-active);
+
+  --medium-green: var(--color-sidebar-active-text);
+  --medium-green-dark: var(--color-heading);
+  --light-green-tint: var(--color-light-lavender);
+
+  --peach-tint: var(--color-soft-pink);
+  --peach-border: var(--color-border);
+  --peach-orange: var(--color-text);
+
+  --gold-accent: #c59b27;
+  --gold-light: #f7edd3;
+
+  /* Typography semantic aliases */
+  --text-main: var(--color-heading);
+  --text-muted: var(--color-text-secondary);
+  --text-light: var(--color-muted);
+  --text-body: var(--color-text);
+  --card-heading: var(--color-card-heading);
+  --table-text: var(--color-table-text);
+  --input-text: var(--color-input-text);
+  --placeholder: var(--color-placeholder);
+  --button-text: var(--color-button-text);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}

@@ -102,7 +102,7 @@ Before running the application, make sure you have:
 ### Frontend (`frontend/.env`)
 Create or edit `frontend/.env`:
 ```env
-VITE_API_BASE_URL=http://127.0.0.1:8000/api
+VITE_API_BASE_URL=http://localhost:8000/api
 ```
 
 ### Backend (`backend/.env`)

@@ -47,3 +47,18 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/pnpm-debug.log*
 
+
+/frontend/.env
+
+frontend/.env
+
+/backend/.env
+/frontend/.env
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+backend/.env
+frontend/.env
